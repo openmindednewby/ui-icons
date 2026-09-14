@@ -81,6 +81,25 @@ const copy: IconDefinition = { paths: [{ d: 'M16 1H4a2 2 0 00-2 2v14h2V3h12V1zm3
 const sun: IconDefinition = { paths: [{ d: 'M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm-1-4h2v3h-2V3zm0 15h2v3h-2v-3zM5.99 4.58l1.42 1.42-1.42 1.41L4.58 5.99 5.99 4.58zm12.02 12.02l1.42 1.42-1.42 1.41-1.41-1.42 1.41-1.41zM3 11h3v2H3v-2zm15 0h3v2h-3v-2zM4.58 18.01l1.42-1.42 1.41 1.42-1.42 1.41-1.41-1.41zm12.02-12.02l1.42-1.42 1.41 1.42-1.42 1.41-1.41-1.41z' }] };
 const moon: IconDefinition = { paths: [{ d: 'M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z' }] };
 
+// Console-surface icons (hint bars, mood chips, view toggles, store links, error wells)
+const gamepad: IconDefinition = { paths: [{ d: 'M7 6h10c2.8 0 4.5 2 5 5l.9 5.6c.3 2-1.2 3.4-2.9 3.4-1 0-1.9-.5-2.5-1.4L16 17H8l-1.5 1.6C5.9 19.5 5 20 4 20c-1.7 0-3.2-1.4-2.9-3.4L2 11c.5-3 2.2-5 5-5zM6 9v2H4v2h2v2h2v-2h2v-2H8V9H6zm10.7 4a1.2 1.2 0 10-2.4 0 1.2 1.2 0 002.4 0zm2.5-2.5a1.2 1.2 0 10-2.4 0 1.2 1.2 0 002.4 0z', fillRule: FillRule.EvenOdd }] };
+const keyboard: IconDefinition = { paths: [{ d: 'M4 5h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2zm0 2v10h16V7H4zm1 1h2v2H5V8zm3 0h2v2H8V8zm3 0h2v2h-2V8zm3 0h2v2h-2V8zm3 0h2v2h-2V8zM5 11h2v2H5v-2zm3 0h2v2H8v-2zm3 0h2v2h-2v-2zm3 0h2v2h-2v-2zm3 0h2v2h-2v-2zM8 14h8v2H8v-2z', fillRule: FillRule.EvenOdd }] };
+const touch: IconDefinition = { paths: [{ d: 'M9 7.5a1.5 1.5 0 013 0V12l5.2 1.1c1.1.25 1.8 1.3 1.6 2.4l-.9 5.1c-.15.8-.85 1.4-1.7 1.4h-6.1c-.55 0-1.05-.3-1.35-.75L5.1 16.5c-.4-.6-.25-1.45.35-1.85.55-.4 1.3-.35 1.8.1L9 16.2V7.5z' }, { d: 'M5 7.5a5.5 5.5 0 0111 0h-2a3.5 3.5 0 00-7 0H5z' }] };
+const checkCircle: IconDefinition = { paths: [{ d: 'M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm-1.5 12.2l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z', fillRule: FillRule.EvenOdd }] };
+const star: IconDefinition = { paths: [{ d: 'M12 2l2.9 6.26 6.85.74-5.1 4.64 1.43 6.76L12 16.97 5.92 20.4l1.43-6.76L2.25 9l6.85-.74L12 2z' }] };
+const trophy: IconDefinition = { paths: [{ d: 'M7 3h10v2h3v3a4 4 0 01-3.6 3.98A5 5 0 0113 14.9V18h4v3H7v-3h4v-3.1a5 5 0 01-3.4-2.92A4 4 0 014 8V5h3V3zM6 7v1a2 2 0 001 1.73V7H6zm11 0v2.73A2 2 0 0018 8V7h-1z', fillRule: FillRule.EvenOdd }] };
+const search: IconDefinition = { paths: [{ d: 'M10 3a7 7 0 015.6 11.2l5.1 5.1-1.4 1.4-5.1-5.1A7 7 0 1110 3zm0 2a5 5 0 100 10 5 5 0 000-10z', fillRule: FillRule.EvenOdd }] };
+const plus: IconDefinition = { paths: [{ d: 'M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6V5z' }] };
+const minus: IconDefinition = { paths: [{ d: 'M5 11h14v2H5v-2z' }] };
+const lock: IconDefinition = { paths: [{ d: 'M17 9V7A5 5 0 007 7v2H6a2 2 0 00-2 2v9a2 2 0 002 2h12a2 2 0 002-2v-9a2 2 0 00-2-2h-1zM9 7a3 3 0 016 0v2H9V7zm-3 4v9h12v-9H6zm6 2a2 2 0 00-1 3.73V18h2v-1.27A2 2 0 0012 13z', fillRule: FillRule.EvenOdd }] };
+const external: IconDefinition = { paths: [{ d: 'M14 3h7v7h-2V6.41l-8.29 8.3-1.42-1.42L17.59 5H14V3zM5 5h6v2H5v12h12v-6h2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z' }] };
+const listView: IconDefinition = { paths: [{ d: 'M3 4h4v4H3V4zm6 1h12v2H9V5zm-6 5h4v4H3v-4zm6 1h12v2H9v-2zm-6 5h4v4H3v-4zm6 1h12v2H9v-2z' }] };
+const railsView: IconDefinition = { paths: [{ d: 'M3 3h6v2H3V3zm0 3h5v5H3V6zm7 0h5v5h-5V6zm7 0h4v5h-4V6zM3 13h6v2H3v-2zm0 3h5v5H3v-5zm7 0h5v5h-5v-5zm7 0h4v5h-4v-5z' }] };
+const mood: IconDefinition = { paths: [{ d: 'M2 16a10 10 0 0120 0h-2a8 8 0 00-16 0H2z' }, { d: 'M11.29 15.29l5-5 1.42 1.42-5 5-1.42-1.42z' }, { d: 'M12 14a2 2 0 110 4 2 2 0 010-4z' }] };
+const clock: IconDefinition = { paths: [{ d: 'M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm-1 3h2v4.59l3.2 3.2-1.41 1.42L11 12.41V7z', fillRule: FillRule.EvenOdd }] };
+const upload: IconDefinition = { paths: [{ d: 'M19 10h-4v6H9v-6H5l7-7 7 7zm-8-2v6h2V8h1.17L12 5.83 9.83 8H11zm-6 10h14v2H5v-2z' }] };
+const alert: IconDefinition = { paths: [{ d: 'M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm-1 3h2v6h-2V7zm0 8h2v2h-2v-2z', fillRule: FillRule.EvenOdd }] };
+
 // Icon Registry
 export const ICON_PATHS = {
   menu, home, logout, close, edit, trash, eye, link, refresh, lightning,
@@ -92,6 +111,9 @@ export const ICON_PATHS = {
   server, triangle, sliders, shield, key: keyIcon, settings,
   qrCode, download, copy, code,
   sun, moon,
+  gamepad, keyboard, touch, check: checkmark, checkCircle, star, trophy,
+  search, plus, minus, lock, external, listView, railsView, mood, clock,
+  upload, alert,
 } as const;
 
 export type IconName = keyof typeof ICON_PATHS;
