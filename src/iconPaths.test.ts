@@ -19,3 +19,14 @@ describe('ICON_PATHS', () => {
     }
   });
 });
+
+const D1_ICONS = ['gamepad', 'keyboard', 'touch', 'check', 'checkCircle', 'star', 'trophy', 'search', 'plus', 'minus',
+  'lock', 'shield', 'external', 'listView', 'railsView', 'mood', 'clock', 'download', 'upload', 'alert'] as const;
+
+describe('D1 console-surface icons', () => {
+  it.each(D1_ICONS)('%s is registered with at least one 24x24 path', (name) => {
+    const def = ICON_PATHS[name];
+    expect(def.paths.length).toBeGreaterThan(0);
+    for (const p of def.paths) expect(p.d).toMatch(/^M[\d.\s-]/);
+  });
+});
