@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0
+
+Row-action icons for the D5 redesign, which replaces the emoji glyphs the portals render inside
+`<Text style={{ color }}>` — a colour emoji ignores `color`, so the tinted glyph those buttons
+promised never worked. Added: `chat`, `ticket`, `archive`, `restore`, `share`, `dots` (vertical
+overflow), and `externalLink` as an alias of the existing `external` glyph. Every path takes its
+fill from `SvgIcon`'s computed `color` prop; none declares its own fill or stroke. Verified legible
+at the row-action sizes 28 (`xs`) / 36 (`sm`) / 44 (`md`).
+
 ## 1.2.0
 
 18 new icons for console-style surfaces (hint bars, mood chips, view toggles, store links, error

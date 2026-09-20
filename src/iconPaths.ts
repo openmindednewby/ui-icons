@@ -100,6 +100,29 @@ const clock: IconDefinition = { paths: [{ d: 'M12 2a10 10 0 110 20 10 10 0 010-2
 const upload: IconDefinition = { paths: [{ d: 'M19 10h-4v6H9v-6H5l7-7 7 7zm-8-2v6h2V8h1.17L12 5.83 9.83 8H11zm-6 10h14v2H5v-2z' }] };
 const alert: IconDefinition = { paths: [{ d: 'M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm-1 3h2v6h-2V7zm0 8h2v2h-2v-2z', fillRule: FillRule.EvenOdd }] };
 
+// Row-action icons (D5 redesign — replaces the emoji glyphs that ignored `color`)
+const chat: IconDefinition = { paths: [{ d: 'M4 4h16a2 2 0 012 2v9a2 2 0 01-2 2h-9l-6 4v-4H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2h16v9h-9.7L7 17.8V15H4V6z', fillRule: FillRule.EvenOdd }] };
+const ticket: IconDefinition = { paths: [{ d: 'M22 10V6a2 2 0 00-2-2H4a2 2 0 00-2 2v4a2 2 0 010 4v4a2 2 0 002 2h16a2 2 0 002-2v-4a2 2 0 010-4zm-8-2h2v8h-2V8z', fillRule: FillRule.EvenOdd }] };
+const archive: IconDefinition = {
+  paths: [
+    { d: 'M2 4a1 1 0 011-1h18a1 1 0 011 1v3a1 1 0 01-1 1H3a1 1 0 01-1-1V4z' },
+    { d: 'M4 9.5h16V19a2 2 0 01-2 2H6a2 2 0 01-2-2V9.5zm8 9l4-4h-2.5v-2.5h-3V14.5H8l4 4z', fillRule: FillRule.EvenOdd },
+  ],
+};
+const restore: IconDefinition = {
+  paths: [
+    { d: 'M2 4a1 1 0 011-1h18a1 1 0 011 1v3a1 1 0 01-1 1H3a1 1 0 01-1-1V4z' },
+    { d: 'M4 9.5h16V19a2 2 0 01-2 2H6a2 2 0 01-2-2V9.5zm8 2.5l-4 4h2.5v2.5h3V16H16l-4-4z', fillRule: FillRule.EvenOdd },
+  ],
+};
+const share: IconDefinition = {
+  paths: [
+    { d: 'M12 2l5 5-1.41 1.41L13 5.83V15h-2V5.83L8.41 8.41 7 7l5-5z' },
+    { d: 'M4 11h4v2H6v7h12v-7h-2v-2h4v11H4V11z' },
+  ],
+};
+const dots: IconDefinition = { paths: [{ d: 'M12 4a2 2 0 110 4 2 2 0 010-4zm0 6a2 2 0 110 4 2 2 0 010-4zm0 6a2 2 0 110 4 2 2 0 010-4z' }] };
+
 // Icon Registry
 export const ICON_PATHS = {
   menu, home, logout, close, edit, trash, eye, link, refresh, lightning,
@@ -114,6 +137,7 @@ export const ICON_PATHS = {
   gamepad, keyboard, touch, check: checkmark, checkCircle, star, trophy,
   search, plus, minus, lock, external, listView, railsView, mood, clock,
   upload, alert,
+  chat, ticket, archive, restore, share, dots, externalLink: external,
 } as const;
 
 export type IconName = keyof typeof ICON_PATHS;
