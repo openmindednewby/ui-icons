@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.1
+
+Fix: `SvgIcon` no longer leaks `accessibilityHint` onto the web `<svg>`. react-native-svg renders
+through react-native-web's `createElement`, which has no mapping for `accessibilityHint`, so the
+prop reached the DOM node and React warned "does not recognize the `accessibilityHint` prop" on
+every screen with an icon. On web the hint is now dropped and the label is sent as `aria-label`;
+native still receives `accessibilityLabel` + `accessibilityHint`. Logic lives in
+`buildSvgA11yProps` (unit-tested).
+
 ## 1.3.0
 
 Row-action icons for the D5 redesign, which replaces the emoji glyphs the portals render inside

@@ -7,9 +7,11 @@
  */
 import React from 'react';
 
+import { Platform } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import { ICON_PATHS } from './iconPaths';
+import { buildSvgA11yProps } from './svgA11yProps';
 
 import type { IconName } from './iconPaths';
 
@@ -35,14 +37,13 @@ export const SvgIcon = ({
   accessibilityHint,
 }: SvgIconProps): React.ReactElement => {
   const iconDef = ICON_PATHS[name];
+  const a11yProps = buildSvgA11yProps(Platform.OS, { testID, accessibilityLabel, accessibilityHint });
 
   return (
     <Svg
-      accessibilityHint={accessibilityHint}
-      accessibilityLabel={accessibilityLabel}
+      {...a11yProps}
       fill={color}
       height={size}
-      testID={testID}
       viewBox={VIEWBOX}
       width={size}
     >
