@@ -1,6 +1,6 @@
 {
   "name": "@dloizides/ui-icons",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Lightweight inline-SVG icon component + icon-path registry (react-native-svg) for the dloizides.com RN-web portfolio. Zero font loading, brand-agnostic.",
   "keywords": [
     "react",
